@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vignesh Aravindh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/bag.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* General Reset and Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Form Styling */
+        form {
+            background-color: #fff;
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px 15px 15px 45px; /* More padding left for icons */
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border 0.3s ease;
+            resize: none;
+        }
+
+        input:focus, textarea:focus {
+            border: 1px solid #1a1a2e;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #1a1a2e;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        /* Footer Styling */
+        #message {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-top: 40px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home" style="margin-right: 6px;"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user" style="margin-right: 6px;"></i>About</a></li>
+                <li><a href="projects.html"><i class="fas fa-code" style="margin-right: 6px;"></i>Projects</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope" style="margin-right: 6px;"></i>Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+
+        <div class="contact-container">
+            <!-- Form (Centered) -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-comment icon"></i>
+                    <textarea id="messageInput" name="message" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit">
+                    <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> Send Message
+                </button>
+            </form>
+        </div>
+
+        <p id="responseMessage" style="font-size: 16px; color: #333; margin-top: 20px;"></p>
+    </section>
+
+    <section id="message">
+        <p>Crafted with passion by <strong>Vignesh Aravindh</strong></p>
+    </section>
+
+    <!-- Form Submission Script -->
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop form default submit
+
+        // Success message display
+        const responseMessage = document.getElementById("responseMessage");
+        responseMessage.innerText = "Thank you! Your message has been sent successfully.";
+        responseMessage.style.color = "green";
+
+        // Clear form fields
+        document.getElementById("contactForm").reset();
+
+        // Auto-reload after 2.5 seconds
+        setTimeout(function() {
+            window.location.reload();
+        }, 2500);
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Aravindh | Portfolio</title>
+    <script src="useCanvasCursor.js"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">  
+    <link rel="icon" href="./assets/bag.png" type="image/x-icon">
+    <style>
+        .typing-clean {
+          overflow: hidden;
+          white-space: nowrap;
+          display: inline-block;
+          width: 0;
+          animation: typingClean 2.5s steps(40, end) forwards;
+        }
+      
+        .typing-clean.delay {
+          animation-delay: 2.7s;
+        }
+      
+        @keyframes typingClean {
+          from { width: 0; }
+          to { width: 100%; }
+        }
+
+        /* Button styling */
+        .btn {
+          display: inline-block;
+          padding: 12px 30px;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 30px;
+          background-color: black;
+          color: white;
+          text-decoration: none;
+          transition: box-shadow 0.4s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+          box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5); /* white glow */
+          transform: scale(1.05);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .hero-content h1, .hero-content h2 {
+                font-size: 24px; /* Make the text larger on smaller screens */
+            }
+
+            .hero-content p {
+                font-size: 18px;
+                max-width: 80%; /* Adjust the width to prevent text from overflowing */
+                margin: 0 auto;
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .social-link {
+                font-size: 22px;
+                color: #333;
+                transition: transform 0.3s ease;
+            }
+
+            .social-link:hover {
+                transform: scale(1.2);
+            }
+
+            .btn {
+                font-size: 16px; /* Adjust button size for mobile */
+                padding: 10px 25px;
+            }
+
+            /* Adjust typing animation delay and duration */
+            .typing-clean {
+                animation-duration: 3.5s;
+            }
+            
+
+            .hero-image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 50%; /* Make the image circular */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+   <header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fas fa-home" style="margin-right: 6px;"></i>Home</a></li>
+            <li><a href="about.html"><i class="fas fa-user" style="margin-right: 6px;"></i>About</a></li>
+            <li><a href="projects.html"><i class="fas fa-code" style="margin-right: 6px;"></i>Projects</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope" style="margin-right: 6px;"></i>Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+<section id="hero">
+    <!-- Profile Image -->
+    <div class="hero-image">
+        <img src="./assets/IMG_20231114_193943_201.jpg" alt="Vignesh Aravindh">
+    </div>
+    <br>
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <h1 class="typing-clean">Hey there,I'm <span>Vignesh Aravindh</span></h1>
+        <h2 class="typing-clean delay">Full Stack Java Developer | UI/UX Explorer</h2>
+        
+        <p>Turning ideas into full-stack Java solutions with clean code and sleek design.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/vignesharavindh" target="_blank" class="social-link linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Aravindh-vignesh" target="_blank" class="social-link github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/vignesh_aravindh_s?igsh=Zjl0bmRnNWFtbGo2" target="_blank" class="social-link instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        
+        <a href="https://drive.google.com/file/d/1DsfheME9zFsVo7NR2b0GvOSAKE72rGvz/view?usp=sharing" download class="btn">Download CV</a>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>📧 Email: <a href="mailto:vignesharavindh27@gmail.com">vignesharavindh27@gmail.com</a></p>
+            <p>© 2025 Vignesh Aravindh. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

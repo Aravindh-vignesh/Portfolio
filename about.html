@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Vignesh Aravindh</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" href="./assets/bag.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Animation Styles */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .scale-up {
+      transform: scale(0.8);
+      opacity: 0;
+      animation: scaleUp 1.5s ease-in-out forwards;
+    }
+
+    @keyframes scaleUp {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .typing {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #00b894;
+      width: 0;
+      animation: typing 3.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+   
+       
+    @keyframes typing {
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Hover Effect */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; overflow-x: hidden;"> 
+
+  <header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fas fa-home" style="margin-right: 6px;"></i>Home</a></li>
+            <li><a href="about.html"><i class="fas fa-user" style="margin-right: 6px;"></i>About</a></li>
+            <li><a href="projects.html"><i class="fas fa-code" style="margin-right: 6px;"></i>Projects</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope" style="margin-right: 6px;"></i>Contact Me</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section id="about" style="padding: 40px 20px; max-width: 1200px; margin: auto;">
+    <h2 class="section-title typing" style="text-align: center; font-size: 2.2rem; color: #2c3e50;">Who Am I?</h2>
+
+    <p class="intro fade-in" style="font-size: 1.2rem; line-height: 1.9; color: #2c3e50; background: linear-gradient(to right, #f0f0f0, #ffffff); padding: 20px; border-left: 5px solid #00b894; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;">
+      👋 Hey there! I'm <strong style="color:#0984e3;">Vignesh Aravindh</strong>, a passionate <strong style="color:#6c5ce7;">Full Stack Java Web Developer</strong> with expertise in building scalable frontend and backend applications. With a creative eye for <strong style="color:#e17055;">UI/UX design</strong>, I blend logic and aesthetics to craft seamless digital experiences. I recently completed my <strong>B.Sc. in Computer Science</strong> at <strong>Guru Nanak College</strong> (<strong>2025</strong>), graduating with a proud CGPA of <strong style="color:#00b894;">8.5</strong>.
+    </p>
+
+    <p class="intro fade-in" style="font-size: 1.2rem; line-height: 1.9; color: #2c3e50; background: linear-gradient(to right, #ffffff, #f9f9f9); padding: 20px; border-left: 5px solid #6c5ce7; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;">
+      I thrive at the intersection of clean code and elegant design—turning complex challenges into intuitive, user-centric web solutions. Driven by curiosity and a love for innovation, I aim to build digital products that are not only functional but truly enjoyable to use.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-top: 40px; justify-content: center; max-width: 1000px; margin-left: auto; margin-right: auto;">
+
+      <!-- Tech Stack -->
+      <div class="card fade-in" style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+        <h3 style="font-size: 1.5rem; color: #2c3e50;">💻 Tech Stack</h3>
+        <ul style="padding-left: 20px; font-size: 1.1rem; color: #2c3e50; line-height: 1.8;">
+          <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap, React.js</li>
+          <li><strong>Backend:</strong> Java (Spring Boot basics)</li>
+          <li><strong>Database:</strong> SQL</li>
+          <li><strong>UI/UX:</strong> Wireframing, Prototyping, User-Centered Design</li>
+          <li><strong>Tools:</strong> GitHub, VS Code, Figma, MS Office Suite</li>
+        </ul>
+      </div>
+
+      <!-- Experience -->
+      <div class="card fade-in" style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+        <h3 style="font-size: 1.5rem; color: #2c3e50;">🚀 Experience & Projects</h3>
+        <ul style="padding-left: 20px; font-size: 1.1rem; color: #2c3e50; line-height: 1.8;">
+          <li><strong>UI/UX Intern</strong> – Turfy: Enhanced user experience for a turf booking app</li>
+          <li><strong>Full Stack Developer Intern</strong> – CredoSystems: Built dynamic interfaces and backend integrations for real-world applications</li>
+
+          <li><strong>Portfolio Website</strong>: Designed and developed to showcase my skills and work</li>
+        </ul>
+      </div>
+
+      <!-- Achievements -->
+      <div class="card fade-in" style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+        <h3 style="font-size: 1.5rem; color: #2c3e50;">🏆 Achievements</h3>
+        <ul style="padding-left: 20px; font-size: 1.1rem; color: #2c3e50; line-height: 1.8;">
+          <li>🏅 Represented <strong>NCC Air Wing</strong> at <strong>AIVSC</strong> (All India Vayu Sainik Camp)</li>
+          <li>🥇 Awarded <strong>Gold Medal</strong> for Academic Proficiency (2024–25) at <strong>Guru Nanak College</strong></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="cta scale-up" style="text-align: center; font-size: 1.1rem; margin-top: 40px; color: #2c3e50;">
+      Always driven by curiosity and creativity, I'm on a journey to build meaningful tech that makes a difference.
+      <a href="contact.html" style="color: #6c5ce7; text-decoration: underline;">Let's collaborate</a> and bring innovative ideas to life!
+    </p>
+  </section>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.fade-in').forEach(function(element) {
+        element.classList.add('fade-in-visible');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Vignesh Aravindh</title>
+    <script src="useCanvasCursor.js"></script>   
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/bag.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Body and header styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+      
+
+       
+        /* Projects Section */
+        #projects {
+            padding: 40px 10px;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #1a1a2e;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            padding: 20px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .project-description p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #1a1a2e;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff5e62;
+        }
+
+        /* Work In Progress Section */
+        #work-in-progress {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        #work-in-progress h2 {
+            font-size: 28px;
+            color: #1a1a2e;
+        }
+
+        #work-in-progress .project-card {
+            background-color: #f7f7f7;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+      
+        /* Thank You Section */
+        #message {
+            padding: 40px;
+            background-color: #f4f4f4;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home" style="margin-right: 6px;"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user" style="margin-right: 6px;"></i>About</a></li>
+                <li><a href="projects.html"><i class="fas fa-code" style="margin-right: 6px;"></i>Projects</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope" style="margin-right: 6px;"></i>Contact Me</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="projects">
+        <center><h2 class="section-title">Projects</h2></center>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Turfy - Turf Booking App</h3>
+                <img src="./assets/Screenshot 2025-04-06 200030.png" alt="Turfy - Turf Booking App">
+                <div class="project-description">
+                    <p>A mobile-based application for booking sports turfs with a seamless UI/UX design.</p>
+                    <a href="https://www.figma.com/design/8saKV1Qw9ETwWctIUWvg5d/Turfy?node-id=0-1&t=uNyBFly1uXWQsijq-1" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Gifty – Your One-Stop Gift Shop</h3>
+                <img src="./assets/Screenshot 2025-04-06 200145.png" alt="Gifty E-Commerce">
+                <div class="project-description">
+                    <p>A MERN Stack project for managing school-related activities efficiently.</p>
+                    <a href="https://aravindh-vignesh.github.io/Gifty-ecommerce/flux.html" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <img src="./assets/Screenshot 2025-04-06 200820.png" alt="Portfolio Website">
+                <div class="project-description">
+                    <p>A personal portfolio showcasing my skills, projects, and achievements.</p>
+                    <a href="https://your-portfolio-link.com" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Nike Frontend Clone</h3>
+                <img src="./assets/Screenshot 2025-04-08 115110.png" alt="Nike Frontend Clone">
+                <div class="project-description">
+                    <p>A frontend Nike website with pages for Men, Women, Kids, and Socks category.</p>
+                    <a href="https://aravindh-vignesh.github.io/Nike-ecommerce/nike.html" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Will be uploaded soon</h3>
+                <img src="./assets/Work in progress-rafiki.svg" alt="Nike Frontend Clone">
+                <div class="project-description">
+                    <p></p>
+                    <a href="https://aravindh-vignesh.github.io/Nike-ecommerce/nike.html" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Will be uploaded soon</h3>
+                <img src="./assets/Work in progress-rafiki.svg" alt="Nike Frontend Clone">
+                <div class="project-description">
+                    <p></p>
+                    <a href="https://aravindh-vignesh.github.io/Nike-ecommerce/nike.html" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+        <section id="work-in-progress">
+            <h2>🚧 Work In Progress</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Expense Tracker App</h3>
+                    <img src="./assets/Work in progress-rafiki.svg" alt="Expense Tracker App">
+                    <div class="project-description">
+                        <p>A user-friendly web app to monitor and categorize daily expenses.</p>
+                        <a href="https://your-expense-tracker-link.com" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>E-Commerce Website</h3>
+                    <img src="./assets/Work in progress-rafiki.svg" alt="E-Commerce Website">
+                    <div class="project-description">
+                        <p>A responsive online store for seamless shopping experiences.</p>
+                        <a href="https://your-ecommerce-website-link.com" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="message">
+        <p>Thank you for exploring my work. Let’s create something amazing together!</p>
+    </section>
+
+</body>
+</html>
