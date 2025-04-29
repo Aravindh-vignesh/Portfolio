@@ -11,21 +11,21 @@
     <link rel="icon" href="./assets/bag.png" type="image/x-icon">
     <style>
      .typing-clean {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  width: 0;
-  animation: typingClean 4s steps(30) forwards; /* Adjust steps as per text length */
-}
-
-.typing-clean.delay {
-  animation-delay: 1s; /* Adjust delay if needed */
-}
-
-@keyframes typingClean {
-  from { width: 0; }
-  to { width: 100%; }
-}
+          overflow: hidden;
+          white-space: nowrap;
+          display: inline-block;
+          width: 0;
+          animation: typingClean 2.5s steps(40, end) forwards;
+        }
+      
+        .typing-clean.delay {
+          animation-delay: 2.7s;
+        }
+      
+        @keyframes typingClean {
+          from { width: 0; }
+          to { width: 100%; }
+        } 
 
         /* Button styling */
         .btn {
@@ -116,7 +116,7 @@
     <!-- Hero Content -->
     <div class="hero-content">
         <h1 class="typing-clean">Hey there,I'm <span>Vignesh Aravindh</span></h1>
-        <h2 class="typing-clean delay">Frontend Developer | Aspiring Full Stack Java Developer | UI/UX Enthusiast</h2>
+        <h2 class="typing-clean delay">Frontend Developer | Aspiring Full Stack Java Developer</h2>
 
         <p>Turning ideas into simple, well-designed web solutions with clean code.</p>
 
