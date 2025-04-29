@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="style.css">  
     <link rel="icon" href="./assets/bag.png" type="image/x-icon">
     <style>
-        .typing-clean {
-          overflow: hidden;
-          white-space: nowrap;
-          display: inline-block;
-          width: 0;
-          animation: typingClean 2.5s steps(40, end) forwards;
-        }
-      
-        .typing-clean.delay {
-          animation-delay: 2.7s;
-        }
-      
-        @keyframes typingClean {
-          from { width: 0; }
-          to { width: 100%; }
-        }
+     .typing-clean {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+  animation: typingClean 4s steps(30) forwards; /* Adjust steps as per text length */
+}
+
+.typing-clean.delay {
+  animation-delay: 1s; /* Adjust delay if needed */
+}
+
+@keyframes typingClean {
+  from { width: 0; }
+  to { width: 100%; }
+}
 
         /* Button styling */
         .btn {
